@@ -9,8 +9,9 @@
     "search": "node .",
     "search:csv": "node . output=csv mac=44:38:39:ff:ef:57",
     "search:xml": "node . output=xml mac=44:38:39:ff:ef:57",
-    "search:full": "node . -f mac=44:38:39:ff:ef:57",
-    "search:default": "node . mac=44:38:39:ff:ef:57"
+    "search:full": "node . full mac=44:38:39:ff:ef:57",
+    "search:default": "node . mac=44:38:39:ff:ef:57",
+    "search:docker:default": "node . mac=44:38:39:ff:ef:57"
   },
   "bin": {
     "mac": "dist/app.js"

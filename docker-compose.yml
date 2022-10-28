@@ -6,5 +6,3 @@ services:
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
-    environment:
-      API_KEY: at_GjVvY0xVT1DMDydaUf2H2xN3wNQg9
