@@ -42,12 +42,10 @@ export class MacService {
       response.on('end', function () {
         if(output !== 'json'){ console.log(string); return;}
         const macAddressData: MacApiResponseInterface = JSON.parse(string);
-        console.log(full ? macAddressData : {
+        console.log({
           status: true,
           code: response.statusCode,
-          data: {
-            companyName: macAddressData.vendorDetails.companyName === '' ? 'NOT_FOUND' : macAddressData.vendorDetails.companyName
-          }
+          data:  full ? macAddressData : {companyName: macAddressData.vendorDetails.companyName === '' ? 'NOT_FOUND' : macAddressData.vendorDetails.companyName}
         });
         return;
       });
